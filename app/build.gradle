@@ -17,4 +17,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':mvpcomponent')
+//    implementation 'com.github.longshihan1:Component:0.0.1'
 }

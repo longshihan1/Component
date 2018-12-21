@@ -22,8 +22,6 @@ import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.Subject;
 import timber.log.Timber;
 
-import static com.longshihan.mvpcomponent.utils.ThirdViewUtil.convertAutoView;
-
 
 /**
  * @author longshihan
@@ -55,11 +53,11 @@ public abstract class BaseActivity extends AppCompatActivity implements IActivit
             throw e;
         }
     }
-    @Override
-    public View onCreateView(String name, Context context, AttributeSet attrs) {
-        View view = convertAutoView(name, context, attrs);
-        return view == null ? super.onCreateView(name, context, attrs) : view;
-    }
+//    @Override
+//    public View onCreateView(String name, Context context, AttributeSet attrs) {
+//        View view = convertAutoView(name, context, attrs);
+//        return view == null ? super.onCreateView(name, context, attrs) : view;
+//    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

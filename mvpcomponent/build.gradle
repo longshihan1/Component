@@ -96,10 +96,6 @@ dependencies {
     api(rootProject.ext.dependencies["rxcache-jolyglot-gson"]) {
         exclude module: 'gson'
     }
-    api(rootProject.ext.dependencies["arouter"]) {
-        exclude module: 'support-v4'
-        exclude module: 'javax.annotation'
-    }
     api(rootProject.ext.dependencies["rxlifecycle2"]) {
         exclude module: 'rxjava'
         exclude module: 'jsr305'
@@ -112,20 +108,12 @@ dependencies {
         exclude module: 'rxandroid'
         exclude module: 'rxlifecycle'
     }
-    api(rootProject.ext.dependencies["autolayout"]){
-        exclude group: 'com.android.support'
-    }
     api(rootProject.ext.dependencies["cardview"]){
         exclude group: 'com.android.support'
     }
-    api rootProject.ext.dependencies["progressmanager"]
     api rootProject.ext.dependencies["retrofit-url-manager"]
-    api(rootProject.ext.dependencies["refresh"]){
-        exclude group: 'com.android.support'
-    }
     api rootProject.ext.dependencies["viewmodel-extensions"]
     api rootProject.ext.dependencies["viewmodel"]
-
     api rootProject.ext.dependencies["livedata"]
     api rootProject.ext.dependencies["livedata-runtime"]
     annotationProcessor  rootProject.ext.dependencies["lifecycle-compiler"]

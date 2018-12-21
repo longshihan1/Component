@@ -20,9 +20,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.longshihan.mvpcomponent.di.component.AppComponent;
 import com.longshihan.mvpcomponent.base.App;
-import com.longshihan.mvpcomponent.intergration.AppManager;
+import com.longshihan.mvpcomponent.di.component.AppComponent;
 import com.longshihan.mvpcomponent.strategy.imageloader.ImageLoader;
 import com.longshihan.mvpcomponent.strategy.imageloader.glide.GlideArms;
 import com.longshihan.mvpcomponent.strategy.imageloader.glide.GlideRequest;

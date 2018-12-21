@@ -1,12 +1,9 @@
 package com.longshihan.mvpcomponent.base;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.AttributeSet;
 import android.view.View;
 
 import com.longshihan.mvpcomponent.base.delegate.IActivity;
@@ -23,7 +20,6 @@ import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.Subject;
 import timber.log.Timber;
 
-import static com.longshihan.mvpcomponent.utils.ThirdViewUtil.convertAutoView;
 
 
 /**
@@ -58,11 +54,11 @@ public abstract class BaseMVPActivity<P extends IPresenter> extends AppCompatAct
         }
     }
 
-    @Override
-    public View onCreateView(String name, Context context, AttributeSet attrs) {
-        View view = convertAutoView(name, context, attrs);
-        return view == null ? super.onCreateView(name, context, attrs) : view;
-    }
+//    @Override
+//    public View onCreateView(String name, Context context, AttributeSet attrs) {
+//        View view = convertAutoView(name, context, attrs);
+//        return view == null ? super.onCreateView(name, context, attrs) : view;
+//    }
 
 
     @Override
