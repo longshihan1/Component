@@ -1,0 +1,43 @@
+project.ext {
+    setDefaultConfig = {
+        extension ->
+            extension.android {
+                compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+                buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+                defaultConfig {
+                    minSdkVersion rootProject.ext.android["minSdkVersion"]
+                    targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+                    versionCode rootProject.ext.android["versionCode"]
+                    versionName rootProject.ext.android["versionName"]
+                    flavorDimensions "color"
+                    multiDexEnabled true
+                    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+                    javaCompileOptions {
+                        annotationProcessorOptions {
+                            println(""+extension.getName())
+                            arguments = [moduleName: extension.getName()]
+                        }
+                    }
+                }
+                lintOptions {
+                    abortOnError false
+                }
+                compileOptions {
+                    sourceCompatibility 1.8
+                    targetCompatibility 1.8
+                }
+
+            }
+            extension.dependencies {
+                implementation fileTree(dir: 'libs', include: ['*.jar'])
+                annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+            }
+    }
+    setDependencies = {
+        extension ->
+            extension.dependencies {
+                implementation fileTree(dir: 'libs', include: ['*.jar'])
+                annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+            }
+    }
+}
