@@ -8,9 +8,6 @@ import com.longshihan.mvpcomponent.base.delegate.AppDelegate;
 import com.longshihan.mvpcomponent.base.delegate.AppLifecycles;
 import com.longshihan.mvpcomponent.di.component.AppComponent;
 import com.longshihan.mvpcomponent.utils.Preconditions;
-import com.longshihan.mvpcomponent.utils.TimberUtil;
-
-import timber.log.Timber;
 
 
 /**
@@ -44,11 +41,6 @@ public class BaseApplication extends Application implements App {
     public void onCreate() {
         super.onCreate();
         this.mAppDelegate.onCreate(this);
-        TimberUtil.setLogAutoEx();
-        Timber.d("1233211111");
-        Timber.d("12332122222");
-        Timber.d("123321333333");
-        Timber.d("44444444444");
     }
 
     /**

@@ -44,23 +44,6 @@ public abstract class BaseMVPActivity<P extends IPresenter> extends AppCompatAct
         return mCache;
     }
 
-    @SuppressWarnings("unchecked")
-    public final <E extends View> E getView(int id) {
-        try {
-            return (E) findViewById(id);
-        } catch (ClassCastException e) {
-            Timber.e(TAG, "Could not cast View to concrete class.", e);
-            throw e;
-        }
-    }
-
-//    @Override
-//    public View onCreateView(String name, Context context, AttributeSet attrs) {
-//        View view = convertAutoView(name, context, attrs);
-//        return view == null ? super.onCreateView(name, context, attrs) : view;
-//    }
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

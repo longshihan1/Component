@@ -119,5 +119,5 @@ dependencies {
     annotationProcessor  rootProject.ext.dependencies["lifecycle-compiler"]
     api rootProject.ext.dependencies["lifecycle-commonjava8"]
     api rootProject.ext.dependencies["lifecycle-reactivestreams"]
-    api 'com.github.longshihan1:CheckPermission:1.0.0'
+    api 'com.github.longshihan1:CheckPermission:1.0.2'
 }
