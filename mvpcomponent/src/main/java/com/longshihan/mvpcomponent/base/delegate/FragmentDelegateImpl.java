@@ -2,12 +2,7 @@ package com.longshihan.mvpcomponent.base.delegate;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Parcel;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
-
-import com.longshihan.mvpcomponent.base.App;
 
 
 /**

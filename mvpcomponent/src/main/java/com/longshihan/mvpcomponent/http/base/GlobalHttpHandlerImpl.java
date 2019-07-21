@@ -51,8 +51,8 @@ public class GlobalHttpHandlerImpl implements GlobalHttpHandler {
                 //匹配获得新的BaseUrl
                 String headerValue = headerValues.get(0);
                 HttpUrl newBaseUrl = null;
-                if (AppService.baseurls.keySet().contains(headerValue)) {
-                    newBaseUrl = HttpUrl.parse(AppService.baseurls.get(headerValue));
+                if (AppService.getBaseurls().keySet().contains(headerValue)) {
+                    newBaseUrl = HttpUrl.parse(AppService.INSTANCE.getBaseurls().get(headerValue));
                 } else {
                     newBaseUrl = request.url();
                 }

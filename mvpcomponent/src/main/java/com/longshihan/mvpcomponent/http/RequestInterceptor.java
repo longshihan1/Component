@@ -2,7 +2,6 @@ package com.longshihan.mvpcomponent.http;
 
 import android.support.annotation.Nullable;
 
-import com.longshihan.mvpcomponent.utils.CharacterHandler;
 import com.longshihan.mvpcomponent.utils.ZipHelper;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -119,8 +118,8 @@ public class RequestInterceptor implements Interceptor {
             }
             if (logResponse) {
                 Timber.w(isJson(responseBody.contentType()) ?
-                                 CharacterHandler.jsonFormat(bodyString) : isXml(responseBody.contentType()) ?
-                        CharacterHandler.xmlFormat(bodyString) : bodyString);
+                                 CharacterHandler.INSTANCE.jsonFormat(bodyString) : isXml(responseBody.contentType()) ?
+                        CharacterHandler.INSTANCE.xmlFormat(bodyString) : bodyString);
             }
 
         } else {

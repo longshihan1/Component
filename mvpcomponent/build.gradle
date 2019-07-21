@@ -1,7 +1,9 @@
 apply from: "${rootProject.rootDir}/module_config.gradle"
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 group = 'com.github.longshihan1'
 
@@ -33,7 +35,11 @@ android {
         sourceCompatibility 1.8
     }
 }
-
+kotlin{             //开始协程实验性功能
+    experimental{
+        coroutines 'enable'
+    }
+}
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     //support
@@ -117,4 +123,7 @@ dependencies {
     api rootProject.ext.dependencies["lifecycle-commonjava8"]
     api rootProject.ext.dependencies["lifecycle-reactivestreams"]
     api 'com.github.longshihan1:CheckPermission:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.22.5'
 }

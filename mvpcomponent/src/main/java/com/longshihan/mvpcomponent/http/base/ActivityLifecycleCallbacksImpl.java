@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
 
-import com.longshihan.mvpcomponent.utils.ArmsUtils;
-
 /**
  * @author longshihan
  * @time 2017/9/6 16:52

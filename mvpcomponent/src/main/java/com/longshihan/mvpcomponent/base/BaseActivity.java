@@ -4,20 +4,17 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.longshihan.mvpcomponent.base.delegate.IActivity;
 import com.longshihan.mvpcomponent.intergration.cache.Cache;
 import com.longshihan.mvpcomponent.intergration.cache.CacheType;
 import com.longshihan.mvpcomponent.intergration.lifecycle.ActivityLifecycleable;
-import com.longshihan.mvpcomponent.utils.ArmsUtils;
 import com.trello.rxlifecycle2.android.ActivityEvent;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.subjects.BehaviorSubject;
 import io.reactivex.subjects.Subject;
-import timber.log.Timber;
 
 
 /**

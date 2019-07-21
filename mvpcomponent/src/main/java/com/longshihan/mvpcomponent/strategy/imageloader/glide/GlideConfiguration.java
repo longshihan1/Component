@@ -16,8 +16,6 @@ import com.bumptech.glide.module.AppGlideModule;
 import com.longshihan.mvpcomponent.di.component.AppComponent;
 import com.longshihan.mvpcomponent.http.GlideModelLoaderFactory;
 import com.longshihan.mvpcomponent.strategy.imageloader.BaseImageLoaderStrategy;
-import com.longshihan.mvpcomponent.utils.ArmsUtils;
-import com.longshihan.mvpcomponent.utils.DataHelper;
 
 import java.io.File;
 import java.io.InputStream;

@@ -15,7 +15,6 @@ import com.longshihan.mvpcomponent.intergration.cache.IntelligentCache;
 import com.longshihan.mvpcomponent.intergration.cache.LruCache;
 import com.longshihan.mvpcomponent.strategy.imageloader.BaseImageLoaderStrategy;
 import com.longshihan.mvpcomponent.strategy.imageloader.glide.GlideImageLoaderStrategy;
-import com.longshihan.mvpcomponent.utils.DataHelper;
 
 import java.io.File;
 import java.util.ArrayList;

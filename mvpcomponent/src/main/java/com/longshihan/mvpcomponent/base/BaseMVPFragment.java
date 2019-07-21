@@ -15,7 +15,6 @@ import com.longshihan.mvpcomponent.intergration.cache.Cache;
 import com.longshihan.mvpcomponent.intergration.cache.CacheType;
 import com.longshihan.mvpcomponent.intergration.lifecycle.FragmentLifecycleable;
 import com.longshihan.mvpcomponent.mvp.IPresenter;
-import com.longshihan.mvpcomponent.utils.ArmsUtils;
 import com.trello.rxlifecycle2.android.FragmentEvent;
 
 import io.reactivex.disposables.CompositeDisposable;

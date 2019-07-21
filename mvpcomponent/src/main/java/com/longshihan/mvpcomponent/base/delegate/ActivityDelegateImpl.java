@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.longshihan.mvpcomponent.base.App;
-
 
 /**
  * @author Administrator
