@@ -124,6 +124,6 @@ dependencies {
     api rootProject.ext.dependencies["lifecycle-reactivestreams"]
     api 'com.github.longshihan1:CheckPermission:1.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.22.5'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.22.5'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.2'
 }

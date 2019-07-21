@@ -4,6 +4,7 @@
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
+/.idea/encodings.xml
 /build
 /captures
 .externalNativeBuild
