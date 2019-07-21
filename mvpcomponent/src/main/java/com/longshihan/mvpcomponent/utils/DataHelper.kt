@@ -247,13 +247,14 @@ object DataHelper {
         val out = ByteArrayOutputStream()
         val buf = ByteArray(1024)
         var num = -1
-        inputStream.use { input ->
-            out.use { it ->
-                while (input.read(buf).also { num = it } != -1) {
-                    it.write(num)
-                }
-            }
-        }
+       var  length=inputStream.copyTo(out,1024)
+//        inputStream.use { input ->
+//            out.use { it ->
+//                while (input.read(buf).also { num = it } != -1) {
+//                    it.write(num)
+//                }
+//            }
+//        }
         val result = out.toString()
         out.close()
         return result
