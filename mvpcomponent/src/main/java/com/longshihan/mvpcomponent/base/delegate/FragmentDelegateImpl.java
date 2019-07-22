@@ -4,6 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
+import com.longshihan.mvpcomponent.base.App;
+
 
 /**
  * {@link FragmentDelegate} 默认实现类

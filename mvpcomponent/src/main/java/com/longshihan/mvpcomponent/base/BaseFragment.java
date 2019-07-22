@@ -14,6 +14,7 @@ import com.longshihan.mvpcomponent.base.delegate.IFragment;
 import com.longshihan.mvpcomponent.intergration.cache.Cache;
 import com.longshihan.mvpcomponent.intergration.cache.CacheType;
 import com.longshihan.mvpcomponent.mvp.IPresenter;
+import com.longshihan.mvpcomponent.utils.ArmsUtils;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;

@@ -154,6 +154,7 @@ object DataHelper {
      * String
      * 返回缓存文件夹
      */
+    @JvmStatic
     fun getCacheFile(context: Context): File {
         return if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
             var file: File? = null
@@ -184,6 +185,7 @@ object DataHelper {
      * @param file
      * @return
      */
+    @JvmStatic
     fun makeDirs(file: File): File {
         if (!file.exists()) {
             file.mkdirs()

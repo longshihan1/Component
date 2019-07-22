@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
 
+import com.longshihan.mvpcomponent.base.App;
 import com.longshihan.mvpcomponent.di.component.AppComponent;
 import com.longshihan.mvpcomponent.di.component.AppComponentImpl;
 import com.longshihan.mvpcomponent.di.module.AppModule;

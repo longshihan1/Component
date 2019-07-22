@@ -9,6 +9,7 @@ import com.longshihan.mvpcomponent.error.core.RxErrorHandler;
 import com.longshihan.mvpcomponent.error.handler.listener.ResponseErrorListener;
 import com.longshihan.mvpcomponent.http.GlobalHttpHandler;
 import com.longshihan.mvpcomponent.http.RequestInterceptor;
+import com.longshihan.mvpcomponent.utils.DataHelper;
 
 import java.io.File;
 import java.io.IOException;

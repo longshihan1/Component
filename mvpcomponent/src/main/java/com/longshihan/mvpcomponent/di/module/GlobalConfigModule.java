@@ -14,7 +14,7 @@ import com.longshihan.mvpcomponent.intergration.cache.CacheType;
 import com.longshihan.mvpcomponent.intergration.cache.IntelligentCache;
 import com.longshihan.mvpcomponent.intergration.cache.LruCache;
 import com.longshihan.mvpcomponent.strategy.imageloader.BaseImageLoaderStrategy;
-import com.longshihan.mvpcomponent.strategy.imageloader.glide.GlideImageLoaderStrategy;
+import com.longshihan.mvpcomponent.utils.DataHelper;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -95,10 +95,12 @@ public class GlobalConfigModule {
     }
 
 
+//    public BaseImageLoaderStrategy provideImageLoaderStrategy() {//图片加载框架默认使用glide
+//        return mLoaderStrategy == null ? new GlideImageLoaderStrategy() : mLoaderStrategy;
+//    }
     public BaseImageLoaderStrategy provideImageLoaderStrategy() {//图片加载框架默认使用glide
-        return mLoaderStrategy == null ? new GlideImageLoaderStrategy() : mLoaderStrategy;
+        return null;
     }
-
     /**
      * 提供处理Rxjava错误的管理器的回调
      *

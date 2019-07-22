@@ -2,6 +2,7 @@ package com.longshihan.mvpcomponent.http;
 
 import android.support.annotation.Nullable;
 
+import com.longshihan.mvpcomponent.utils.CharacterHandler;
 import com.longshihan.mvpcomponent.utils.ZipHelper;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

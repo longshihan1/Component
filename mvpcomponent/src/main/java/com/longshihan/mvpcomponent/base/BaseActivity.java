@@ -9,6 +9,7 @@ import com.longshihan.mvpcomponent.base.delegate.IActivity;
 import com.longshihan.mvpcomponent.intergration.cache.Cache;
 import com.longshihan.mvpcomponent.intergration.cache.CacheType;
 import com.longshihan.mvpcomponent.intergration.lifecycle.ActivityLifecycleable;
+import com.longshihan.mvpcomponent.utils.ArmsUtils;
 import com.trello.rxlifecycle2.android.ActivityEvent;
 
 import io.reactivex.disposables.CompositeDisposable;
