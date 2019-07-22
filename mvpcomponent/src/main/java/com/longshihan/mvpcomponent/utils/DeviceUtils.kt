@@ -243,10 +243,7 @@ object DeviceUtils {
     fun hasInternet(context: Context): Boolean {
         val flag: Boolean
         val manager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-        if (manager != null && manager.activeNetworkInfo != null)
-            flag = true
-        else
-            flag = false
+        flag = manager.activeNetworkInfo != null
         return flag
     }
 
@@ -298,12 +295,7 @@ object DeviceUtils {
      * @return
      */
     fun isLandscape(context: Context): Boolean {
-        val flag: Boolean
-        if (context.resources.configuration.orientation == 2)
-            flag = true
-        else
-            flag = false
-        return flag
+        return context.resources.configuration.orientation == 2
     }
 
     /**
