@@ -66,7 +66,7 @@ public class RepositoryManager implements IRepositoryManager {
      * @return ApiService
      */
     private <T> T createWrapperService(Class<T> serviceClass) {
-        Preconditions.checkNotNull(serviceClass, "serviceClass == null");
+        Preconditions.INSTANCE.checkNotNull(serviceClass, "serviceClass == null");
         // 通过二次代理，对 Retrofit 代理方法的调用包进新的 Observable 里在 io 线程执行。
         return (T) Proxy.newProxyInstance(serviceClass.getClassLoader(),
                 new Class<?>[]{serviceClass}, new InvocationHandler() {
@@ -101,7 +101,7 @@ public class RepositoryManager implements IRepositoryManager {
         if (mRetrofitServiceCache == null) {
             mRetrofitServiceCache = mCachefactory.build(CacheType.RETROFIT_SERVICE_CACHE);
         }
-        Preconditions.checkNotNull(mRetrofitServiceCache,
+        Preconditions.INSTANCE.checkNotNull(mRetrofitServiceCache,
                 "Cannot return null from a Cache.Factory#build(int) method");
         T retrofitService = (T) mRetrofitServiceCache.get(serviceClass.getCanonicalName());
         if (retrofitService == null) {
@@ -125,11 +125,11 @@ public class RepositoryManager implements IRepositoryManager {
     @NonNull
     @Override
     public synchronized <T> T obtainCacheService(@NonNull Class<T> cacheClass) {
-        Preconditions.checkNotNull(cacheClass, "cacheClass == null");
+        Preconditions.INSTANCE.checkNotNull(cacheClass, "cacheClass == null");
         if (mCacheServiceCache == null) {
             mCacheServiceCache = mCachefactory.build(CacheType.CACHE_SERVICE_CACHE);
         }
-        Preconditions.checkNotNull(mCacheServiceCache,
+        Preconditions.INSTANCE.checkNotNull(mCacheServiceCache,
                 "Cannot return null from a Cache.Factory#build(int) method");
         T cacheService = (T) mCacheServiceCache.get(cacheClass.getCanonicalName());
         if (cacheService == null) {

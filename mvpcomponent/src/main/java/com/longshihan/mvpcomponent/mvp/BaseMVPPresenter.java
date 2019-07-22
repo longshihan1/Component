@@ -40,8 +40,8 @@ public class BaseMVPPresenter<M extends IModel,V extends IView> implements IPres
      * @param rootView
      */
     public BaseMVPPresenter(M model, V rootView) {
-        Preconditions.checkNotNull(model, "%s cannot be null", IModel.class.getName());
-        Preconditions.checkNotNull(rootView, "%s cannot be null", IView.class.getName());
+        Preconditions.INSTANCE.checkNotNull(model, "%s cannot be null", IModel.class.getName());
+        Preconditions.INSTANCE.checkNotNull(rootView, "%s cannot be null", IView.class.getName());
         this.mModel = model;
         this.mRootView = rootView;
     }

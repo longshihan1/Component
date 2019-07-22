@@ -77,8 +77,5 @@ public interface AppComponent {
      */
     ExecutorService executorService();
 
-    //用来存取一些整个App公用的数据,切勿大量存放大容量数据
-    Map<String, Object> extras();
-
     void inject(AppDelegate delegate);
 }
